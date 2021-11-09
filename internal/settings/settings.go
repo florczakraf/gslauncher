@@ -60,6 +60,7 @@ type Settings struct {
 	AutoDownloadMode AutoDownloadMode
 	UserUnlocks      bool
 	AutoLaunch       bool
+	GrooveStatsUrl   string
 
 	// debug settings, not stored in the json
 	Debug                  bool   `json:"-"`
@@ -69,7 +70,6 @@ type Settings struct {
 	FakeGsNewSessionResult string `json:"-"`
 	FakeGsSubmitResult     string `json:"-"`
 	FakeGsRpg              bool   `json:"-"`
-	GrooveStatsUrl         string `json:"-"`
 
 	// backwards compatibility fields
 	SmDataDir string `json:",omitempty"`
